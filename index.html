@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alaukik iTech Solutions | Indore</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="./other_assets/logo.png" alt="logo">
+            </div>
+            <div class="bar">
+                <label class="headings"><a href="#">Home</a></label>
+                <label class="headings" id="service"><a href="#">Services</a></label>
+                <div id="s-drop">
+                    <div class="inner">
+                        <div id="head1">
+                            <p>Mobile App <br> Devlopment</p>
+                        </div>
+                        <div id="links">
+                            <label><a href="">Android App Development</a></label>
+                            <label><a href="">IOS App Development</a></label>
+                            <label><a href="">React App Development</a></label>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div id="head2">
+                            <p>Custom Software <br> Development</p>
+                        </div>
+                        <div id="links">
+                            <label><a href="">Web Application Development</a></label>
+                            <label><a href="">Software Development</a></label>
+                            <label><a href="">Project Management</a></label>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div id="head3">
+                            <p>Hiring</p>
+                        </div>
+                        <div id="links">
+                            <label><a href="">Web/App Developer</a></label>
+                            <label><a href="">Trainer</a></label>
+                            <label><a href="">Freelancer</a></label>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div id="head4">
+                            <p>Other Services</p>
+                        </div>
+                        <div id="links">
+                            <label><a href="">Industrial Training</a></label>
+                            <label><a href="">Internship</a></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="headings"><a href="#">Contact us</a></label>
+                <label class="headings"><a href="#">About us</a></label>
+            </div>
+        </nav>
+    </header>
+    <div id="pop">
+        <span class="close">&times;</span>
+        <div id="popup">
+            <div class="popuphead">
+            </div>
+        </div>
+    </div>
+    <script>
+        var pop = document.getElementById("pop");
+        var cls = document.getElementsByClassName("close")[0];
+        cls.onclick = function() {
+            pop.style.display = "none";
+        }
+        window.onclick = function() {
+            if (event.target = pop) {
+                pop.style.display = "none";
+            }
+        }
+
+        function popitup() {
+            setTimeout(function() {
+                pop.style.display = "block"
+            }, 5000);
+        }
+        popitup();
+    </script>
+    <div id="m-body">
+        <section>
+            <div class="slider">
+                <img class="images" src="./other_assets/data_science.jpg" style="width:100%;" alt="image-hidden">
+                <img class="images" src="./other_assets/android.jpg" style="width:100%;" alt="image-hidden">
+                <img class="images" src="./other_assets/web.jpg" style="width:100%;" alt="image-hidden">
+                <img class="images" src="./other_assets/android.jpg" style="width:100%;" alt="image-hidden">
+                <img class="images" src="./other_assets/data_science.jpg" style="width:100%;" alt="image-hidden">
+            </div>
+        </section>
+        <div id="video">
+            <video autoplay muted loop id="myvideo">
+                <source src="./other_assets/digital.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section id="cards">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="flip-img" src="./other_assets/data_science.jpg" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="flip-img" src="./other_assets/android.jpg" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="flip-img" src="./other_assets/web.jpg" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="on-image">
+            <div class="in-on-image">
+                <h1>Hiring Requirements</h1>
+                <ul>
+                    <li class="li1">Web/App developer</li>
+                    <li class="li2">Trainer</li>
+                    <li class="li3">Freelancer</li>
+                </ul>
+            </div>
+        </div>
+        <div id="right">
+            <div class="in-right">
+                <h1>Internship Programs</h1>
+                <ul>
+                    <li class="li1">Android App Development</li>
+                    <li class="li2">Web Development</li>
+                    <li class="li3">Project Management</li>
+                    <li class="li4">Software Development</li>
+                </ul>
+            </div>
+            <div class="in-right-img">
+                <img src="./other_assets/internship.jpg" alt="internship">
+            </div>
+        </div>
+        <div id="left">
+            <div class="in-left">
+                <h1>Internship Programs</h1>
+                <ul>
+                    <li class="li1">Android App Development</li>
+                    <li class="li2">Web Development</li>
+                    <li class="li3">Project Management</li>
+                    <li class="li4">Software Development</li>
+                </ul>
+            </div>
+            <div class="in-left-img">
+                <img src="./other_assets/internship.jpg" alt="internship">
+            </div>
+        </div>
+        <footer>
+            <p>Alaukik iTech Solutions | Indore, Copyright &copy; 2020</p>
+        </footer>
+        <script>
+            myi = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("images");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myi++;
+                if (myi > x.length) {
+                    myi = 1
+                }
+                x[myi - 1].style.display = "block";
+                setTimeout(carousel, 5000);
+            }
+            var vid = document.getElementById("myvideo");
+            vid.playbackRate = 0.6;
+        </script>
+    </div>
+</body>
+
+</html>

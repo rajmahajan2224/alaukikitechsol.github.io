@@ -1,1 +1,1 @@
-# alaukikitechsol.github.io
+# alaukikitech.github.io
